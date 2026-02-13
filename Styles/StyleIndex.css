@@ -1,0 +1,342 @@
+body{
+    background-image: linear-gradient(pink,white, pink);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Contenido1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards;
+
+    p{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+        background-color: rgba(255, 192, 203, 0.5);
+        border-radius: 15px;
+        border-style: groove;
+        width: 50%;
+        padding: 10px;
+    }
+
+    img{
+        width: 250px;
+    }
+
+}
+
+.Contenido2{
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards;
+
+    
+    margin-left: 5%;
+
+    img{
+        width: 250px;
+    }
+
+    p{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+        background-color: rgba(255, 192, 203, 0.5);
+        border-radius: 15px;
+        border-style: groove;
+        width: 40%;
+        padding: 10px;
+    }
+}
+
+.Contenido3{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 15px;
+    margin-right: 5%;
+    opacity: 0;
+    transform: translateY(20px);
+    align-items: center;
+
+    animation: aparecer 1s ease forwards;
+
+    p{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+        background-color: rgba(255, 192, 203, 0.5);
+        border-radius: 15px;
+        border-style: groove;
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+.Recuerdos{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+
+    h1{
+        background-color: pink;
+        padding: 15px;
+        border-radius: 15px;
+        border-style: groove;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
+
+.Seccion1{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    video{
+        background-color: white;
+        padding: 15px;
+        width: 25%;
+        border-radius: 15px;
+    }
+
+    img{
+        background-color: white;
+        padding: 15px;
+        width: 25%;
+        border-radius: 15px;
+    }
+
+    img:hover{
+        transform: scale(1.5);
+        transition: transform 0.3s ease;
+    }
+}
+
+.FotoJuntos{
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+ 
+    border-radius: 25px;
+    border-style:hidden;
+    width: 200px;
+    height: auto;
+
+
+
+
+}
+
+
+button{
+    width: 70px;
+    height: 70px;
+    background-color: pink;
+    border-radius: 70%;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Titulo{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease forwards;
+
+
+
+    h1{
+        background-image: radial-gradient(red);
+        border-radius: 15px;
+        border-style: groove;
+        width: 50%;
+        padding: 10px;
+        font-size: 50px;
+    }
+
+}
+
+img{
+    margin: 15px;
+    display: flex;
+    border-radius: 15px;
+    border-style:inset;
+}
+
+video{
+    margin:15px;
+    display: flex;
+    border-radius: 15px;
+    border-style: inset;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe{
+    margin:15px;
+    display: flex;
+    border-radius: 15px;
+    border-style: inset;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-transition {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.scroll-transition.visible {
+    opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background-image: linear-gradient(pink, white, pink);
+    }
+
+  
+    .Titulo {
+        margin-top: 25px;
+    }
+
+    .Titulo h1 {
+        width: 90%;
+        font-size: 28px;
+        padding: 10px;
+    }
+
+
+    .Contenido1 {
+        flex-direction: column;
+    }
+
+    .Contenido1 p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .Contenido1 img {
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+  
+    .Contenido2 {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Contenido2 img {
+        width: 100% !important;
+        max-width: 300px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .Contenido2 p {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .Contenido2 video {
+        width: 100% !important;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .Contenido2 iframe {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        margin: 10px auto;
+    }
+
+    
+    .Contenido3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .Contenido3 p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .Contenido3 video {
+        width: 100% !important;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .Contenido3 iframe {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto !important;
+        margin: 10px auto;
+    }
+
+    .FotoJuntos {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .FotoJuntos img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .Seccion1 video {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .Seccion1 img {
+        width: 100% !important;
+        max-width: 100%;
+    }
+}
